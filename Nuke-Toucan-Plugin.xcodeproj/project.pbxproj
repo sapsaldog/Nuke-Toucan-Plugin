@@ -11,6 +11,8 @@
 		0C232AF21D91A7B6004CAFC8 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C232AF01D91A7B6004CAFC8 /* Nuke.framework */; };
 		0C232AF31D91A7B6004CAFC8 /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C232AF11D91A7B6004CAFC8 /* Toucan.framework */; };
 		0C232B011D91B037004CAFC8 /* Processors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C232AED1D91A70B004CAFC8 /* Processors.swift */; };
+		0C232B061D91B232004CAFC8 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C232B041D91B232004CAFC8 /* Nuke.framework */; };
+		0C232B071D91B232004CAFC8 /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C232B051D91B232004CAFC8 /* Toucan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +21,9 @@
 		0C232AED1D91A70B004CAFC8 /* Processors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Processors.swift; sourceTree = "<group>"; };
 		0C232AF01D91A7B6004CAFC8 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		0C232AF11D91A7B6004CAFC8 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/iOS/Toucan.framework; sourceTree = "<group>"; };
-		0C232AF91D91B01B004CAFC8 /* Nuke Toucan Plugin tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Nuke Toucan Plugin tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C232AF91D91B01B004CAFC8 /* NukeToucanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeToucanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C232B041D91B232004CAFC8 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/tvOS/Nuke.framework; sourceTree = "<group>"; };
+		0C232B051D91B232004CAFC8 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/tvOS/Toucan.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C232B061D91B232004CAFC8 /* Nuke.framework in Frameworks */,
+				0C232B071D91B232004CAFC8 /* Toucan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				0C232AD81D91A600004CAFC8 /* NukeToucanPlugin.framework */,
-				0C232AF91D91B01B004CAFC8 /* Nuke Toucan Plugin tvOS.framework */,
+				0C232AF91D91B01B004CAFC8 /* NukeToucanPlugin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +86,8 @@
 		0C232AEF1D91A78E004CAFC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C232B041D91B232004CAFC8 /* Nuke.framework */,
+				0C232B051D91B232004CAFC8 /* Toucan.framework */,
 				0C232AF01D91A7B6004CAFC8 /* Nuke.framework */,
 				0C232AF11D91A7B6004CAFC8 /* Toucan.framework */,
 			);
@@ -139,7 +147,7 @@
 			);
 			name = "Nuke Toucan Plugin tvOS";
 			productName = "Nuke Toucan Plugin tvOS";
-			productReference = 0C232AF91D91B01B004CAFC8 /* Nuke Toucan Plugin tvOS.framework */;
+			productReference = 0C232AF91D91B01B004CAFC8 /* NukeToucanPlugin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -381,12 +389,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporing Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-Toucan-Plugin-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NukeToucanPlugin;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -402,12 +415,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporing Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Nuke-Toucan-Plugin-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NukeToucanPlugin;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
