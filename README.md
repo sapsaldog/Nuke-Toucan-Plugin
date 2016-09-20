@@ -1,13 +1,13 @@
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/1567433/13918338/f8670eea-ef7f-11e5-814d-f15bdfd6b2c0.png" height="180"/>
 
 <p align="center">
-<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Nuke-Alamofire-Plugin.svg"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Nuke-Toucan-Plugin.svg"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 </p>
 
 [Toucan](https://github.com/gavinbunney/Toucan) plugin for [Nuke](https://github.com/kean/Nuke) that provides a simple API for processing images. It supports resizing, cropping, rounded rect masking and more.
 
-The current version temporarily uses [Toucan fork](https://github.com/kean/Toucan) but will switch to the original repo as soon as it is updated to Swift 3.
+The current version temporarily uses [Toucan fork](https://github.com/kean/Toucan) but will switch to the original repo as soon as it is updated to Swift 3. Make sure to check out installation instructions!
 
 
 ## Usage
@@ -28,7 +28,6 @@ let request = Nuke.Request(url: url).processed(key: "Avatar") {
     return $0.resize(CGSize(width: 500, height: 500), fitMode: .crop)
              .maskWithEllipse()
 }
-}
 ```
 
 A key which you provide in the request is used to compare image processors. Equivalent image processors should have the same key. Sometimes a simple string like "Avatar" will do.
@@ -45,8 +44,8 @@ To install the plugin add a dependency to your Podfile:
 # source 'https://github.com/CocoaPods/Specs.git'
 # use_frameworks!
 
-pod 'Nuke-Toucan-Plugin'
-pod 'Toucan', :git => 'https://github.com/kean/Toucan.git'
+pod 'Nuke-Toucan-Plugin', :git = 'https://github.com/kean/Nuke-Toucan-Plugin.git'
+pod 'Toucan', :git => 'https://github.com/kean/Toucan.git', :branch => 'swift3'
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
@@ -66,7 +65,7 @@ github "kean/Nuke-Toucan-Plugin"
 ## Dependencies
 
 - [Nuke 4.x](https://github.com/kean/Nuke)
-- [Toucan]((https://github.com/gavinbunney/Toucan), at the moment fork is used intead of the original repo
+- [Toucan]((https://github.com/gavinbunney/Toucan), at the moment the fork is used instead of the original repo
 
 ## License
 

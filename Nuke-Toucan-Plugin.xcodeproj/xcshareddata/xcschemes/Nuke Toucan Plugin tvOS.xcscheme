@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C232AF81D91B01B004CAFC8"
-               BuildableName = "Nuke Toucan Plugin tvOS.framework"
+               BuildableName = "NukeToucanPlugin.framework"
                BlueprintName = "Nuke Toucan Plugin tvOS"
                ReferencedContainer = "container:Nuke-Toucan-Plugin.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C232AF81D91B01B004CAFC8"
-            BuildableName = "Nuke Toucan Plugin tvOS.framework"
+            BuildableName = "NukeToucanPlugin.framework"
             BlueprintName = "Nuke Toucan Plugin tvOS"
             ReferencedContainer = "container:Nuke-Toucan-Plugin.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C232AF81D91B01B004CAFC8"
-            BuildableName = "Nuke Toucan Plugin tvOS.framework"
+            BuildableName = "NukeToucanPlugin.framework"
             BlueprintName = "Nuke Toucan Plugin tvOS"
             ReferencedContainer = "container:Nuke-Toucan-Plugin.xcodeproj">
          </BuildableReference>
