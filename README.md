@@ -12,7 +12,7 @@ The current version temporarily uses [Toucan fork](https://github.com/kean/Touca
 
 ## Usage
 
-The plugin adds two methods in an extension of `Nuke.Request` which let you easily use first-class Toucan API to process you image:
+The plugin adds two methods in an extension of `Nuke.Request` which let you easily use first-class Toucan API to process your image:
 
 ```swift
 var request = Nuke.Request(url: url)
@@ -65,7 +65,7 @@ github "kean/Nuke-Toucan-Plugin"
 ## Dependencies
 
 - [Nuke 4.x](https://github.com/kean/Nuke)
-- [Toucan]((https://github.com/gavinbunney/Toucan), at the moment the fork is used instead of the original repo
+- [Toucan](https://github.com/gavinbunney/Toucan), at the moment the fork is used instead of the original repo
 
 ## License
 
