@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.module_name      = "NukeToucanPlugin"
 
     s.dependency 'Nuke', '~> 4.0'
-    s.dependency 'Toucan', :git => 'https://github.com/kean/Toucan.git'
+    s.dependency 'Toucan'
 
     s.source_files  = 'Sources/**/*'
 end
