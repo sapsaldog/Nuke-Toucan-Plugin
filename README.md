@@ -12,6 +12,18 @@ The current version temporarily uses [Toucan fork](https://github.com/kean/Touca
 
 ## Usage
 
+The plugin adds two methods in an extension of `Nuke.Request` which let you easily use first-class Toucan API to process you image:
+
+```swift
+var request = Nuke.Request(url: url)
+request.process(key: "Avatar") {
+    return $0.resize(CGSize(width: 500, height: 500), fitMode: .crop)
+             .maskWithEllipse()
+}
+```
+
+A key which you provide in the request is used to compare image processors. Equivalent image processors should have the same key. Sometimes a simple string like "Avatar" will do.
+
 ## Installation
 
 ### [CocoaPods](http://cocoapods.org)
