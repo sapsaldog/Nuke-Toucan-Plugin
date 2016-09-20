@@ -22,7 +22,18 @@ request.process(key: "Avatar") {
 }
 ```
 
+And a non-mutating method:
+```swift
+let request = Nuke.Request(url: url).processed(key: "Avatar") { 
+    return $0.resize(CGSize(width: 500, height: 500), fitMode: .crop)
+             .maskWithEllipse()
+}
+}
+```
+
 A key which you provide in the request is used to compare image processors. Equivalent image processors should have the same key. Sometimes a simple string like "Avatar" will do.
+
+Naturally you can add your own extensions to `Nuke.Request` to describe common operations.
 
 ## Installation
 
