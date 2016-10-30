@@ -24,6 +24,9 @@
 		0C232AF91D91B01B004CAFC8 /* NukeToucanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeToucanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C232B041D91B232004CAFC8 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/tvOS/Nuke.framework; sourceTree = "<group>"; };
 		0C232B051D91B232004CAFC8 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/tvOS/Toucan.framework; sourceTree = "<group>"; };
+		0C9C675C1DC601F200973FF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C9C675D1DC601FB00973FF3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0C9C675E1DC601FB00973FF3 /* Nuke-Toucan-Plugin.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Nuke-Toucan-Plugin.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 				0C232AE91D91A69C004CAFC8 /* Sources */,
 				0C232AEA1D91A69C004CAFC8 /* Supporing Files */,
 				0C232AEF1D91A78E004CAFC8 /* Frameworks */,
+				0C9C675B1DC601D600973FF3 /* Metadata */,
 				0C232AD91D91A600004CAFC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +96,16 @@
 				0C232AF11D91A7B6004CAFC8 /* Toucan.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C9C675B1DC601D600973FF3 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				0C9C675C1DC601F200973FF3 /* README.md */,
+				0C9C675D1DC601FB00973FF3 /* CHANGELOG.md */,
+				0C9C675E1DC601FB00973FF3 /* Nuke-Toucan-Plugin.podspec */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +170,7 @@
 		0C232ACF1D91A600004CAFC8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Alexander Grebenyuk";
 				TargetAttributes = {
 					0C232AD71D91A600004CAFC8 = {
@@ -245,6 +259,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -298,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -459,6 +475,7 @@
 				0C232AFF1D91B01B004CAFC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
