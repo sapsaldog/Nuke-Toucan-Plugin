@@ -7,8 +7,6 @@
 
 [Toucan](https://github.com/gavinbunney/Toucan) plugin for [Nuke](https://github.com/kean/Nuke) that provides a simple API for processing images. It supports resizing, cropping, rounded rect masking and more.
 
-The current version temporarily uses [Toucan fork](https://github.com/kean/Toucan) but will switch to the original repo as soon as it is updated to Swift 3. Make sure to check out installation instructions!
-
 
 ## Usage
 
@@ -44,8 +42,8 @@ To install the plugin add a dependency to your Podfile:
 # source 'https://github.com/CocoaPods/Specs.git'
 # use_frameworks!
 
-pod 'Nuke-Toucan-Plugin', :git = 'https://github.com/kean/Nuke-Toucan-Plugin.git'
-pod 'Toucan', :git => 'https://github.com/kean/Toucan.git', :branch => 'swift3'
+pod 'Nuke-Toucan-Plugin'
+pod 'Toucan'
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
@@ -65,7 +63,7 @@ github "kean/Nuke-Toucan-Plugin"
 ## Dependencies
 
 - [Nuke 4.x](https://github.com/kean/Nuke)
-- [Toucan](https://github.com/gavinbunney/Toucan), at the moment the fork is used instead of the original repo
+- [Toucan 0.6](https://github.com/gavinbunney/Toucan)
 
 ## License
 
