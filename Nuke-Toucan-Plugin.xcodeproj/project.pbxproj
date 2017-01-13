@@ -24,6 +24,7 @@
 		0C232AF91D91B01B004CAFC8 /* NukeToucanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeToucanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C232B041D91B232004CAFC8 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/tvOS/Nuke.framework; sourceTree = "<group>"; };
 		0C232B051D91B232004CAFC8 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/tvOS/Toucan.framework; sourceTree = "<group>"; };
+		0C987FF11E297DD30062EEA3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		0C9C675C1DC601F200973FF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0C9C675D1DC601FB00973FF3 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		0C9C675E1DC601FB00973FF3 /* Nuke-Toucan-Plugin.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Nuke-Toucan-Plugin.podspec"; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 			children = (
 				0C9C675C1DC601F200973FF3 /* README.md */,
 				0C9C675D1DC601FB00973FF3 /* CHANGELOG.md */,
+				0C987FF11E297DD30062EEA3 /* Cartfile */,
 				0C9C675E1DC601FB00973FF3 /* Nuke-Toucan-Plugin.podspec */,
 			);
 			name = Metadata;

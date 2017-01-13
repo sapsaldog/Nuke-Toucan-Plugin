@@ -1,2 +1,2 @@
 github "kean/Nuke" ~> 4.0
-github "kean/Toucan" "swift3"
+github "gavinbunney/Toucan" >= 0.6

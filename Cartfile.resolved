@@ -1,2 +1,2 @@
 github "kean/Nuke" "4.1.2"
-github "kean/Toucan" "cc66a45b74d37bb556b1007b3c175ad5fd56834c"
+github "gavinbunney/Toucan" "0.6.0"

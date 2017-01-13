@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.module_name      = "NukeToucanPlugin"
 
     s.dependency 'Nuke', '~> 4.0'
-    s.dependency 'Toucan'
+    s.dependency 'Toucan', '>= 0.6'
 
     s.source_files  = 'Sources/**/*'
 end
