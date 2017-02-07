@@ -62,7 +62,7 @@ github "kean/Nuke-Toucan-Plugin"
 
 ## Dependencies
 
-- [Nuke 4.x](https://github.com/kean/Nuke)
+- [Nuke 5](https://github.com/kean/Nuke)
 - [Toucan 0.6](https://github.com/gavinbunney/Toucan)
 
 ## License

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Nuke-Toucan-Plugin'
-    s.version          = '0.2'
+    s.version          = '0.3'
     s.summary          = 'Toucan plugin for Nuke - image loading and caching framework'
 
     s.homepage         = 'https://github.com/kean/Nuke-Toucan-Plugin'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
     s.module_name      = "NukeToucanPlugin"
 
-    s.dependency 'Nuke', '~> 4.0'
+    s.dependency 'Nuke', '~> 5.0'
     s.dependency 'Toucan', '>= 0.6'
 
     s.source_files  = 'Sources/**/*'
