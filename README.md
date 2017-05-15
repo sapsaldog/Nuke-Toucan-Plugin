@@ -13,6 +13,9 @@
 The plugin adds two methods in an extension of `Nuke.Request` which let you easily use first-class Toucan API to process your image:
 
 ```swift
+import Nuke
+import NukeToucanPlugin
+
 var request = Nuke.Request(url: url)
 request.process(key: "Avatar") {
     return $0.resize(CGSize(width: 500, height: 500), fitMode: .crop)
